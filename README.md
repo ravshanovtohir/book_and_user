@@ -8,15 +8,13 @@ The data structure is located inside the model file inside the setup file. In th
 If you want, postgresQl code for mock data is written in the mockData.js file inside the setup file
 
 
-
-#start program
-
+# start program
 ```
 To run the program fully, you need to type npm i in the terminal
 To run the program, type npm run start:dev in the terminal
 ```
 
-#About program
+# About program
 ```
 I used express.js to get the user and books to the browser after running the app
 For user: http://localhost:5000/api/books
