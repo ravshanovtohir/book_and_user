@@ -1,0 +1,19 @@
+BOOKS
+
+---------------
+
+1. Data Modeling
+
+API
+
+Mutations :
+    addUser,
+    editUser
+    deleteUser
+    addBook
+    editBook
+    deleteBook
+
+Query :
+    getBook
+    getUser

@@ -1,0 +1,48 @@
+type ResponseUser {
+    status: Int!
+    message: String!
+    data: User
+}
+
+type ResponseBook {
+    status: Int!
+    message: String!
+    data: Book
+}
+
+type Query {
+  ali: String
+  users: [User!]!
+  books: Book
+}
+
+type User {
+    userId: ID
+    firstName: String
+    lastName: String
+    age: Int
+    createdAt: String
+    updatedAt: String
+    books: Book
+}
+
+type Book {
+    bookId: ID
+    bookTitle: String
+    bookAuthor: String
+    isFree: Boolean
+    createdAt: String
+}
+
+type Mutation {
+    addUser(firstName: String!, lastName: String!, age: Int):ResponseUser
+    editUser(userId: ID!, firstName: String, lastName: String):ResponseUser
+    deleteUser(userId: ID!):ResponseUser
+
+    addBook(bookTitle: String!, bookAuthor: String!,  userId: ID):ResponseBook
+    editBook(bookId: ID, bookTitle: String, bookAuthor: String, isFree: Boolean, userId: ID):ResponseBook
+    deleteBook(bookId: ID!):ResponseBook
+
+    
+    deleteBookForUser(userId: ID!, bookId: ID!):ResponseBook
+}

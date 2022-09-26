@@ -1,0 +1,39 @@
+type Query {
+  ali: String
+  books: Book!
+}
+
+
+
+# type Query {
+#   books(page: Int, limit: Int, search: String): [Book!]!
+# }
+
+# type Book {
+#   id: ID
+#   firstName: String
+#   lastName: String
+#   age: String
+#   createdAt: String
+#   updatedAt: String
+#   Books: Books!
+# }
+
+# type Books {
+#     id: ID
+#     title: String
+#     author: String
+#     createdAt: String
+# }
+
+# type Mutation {
+#   addBranch(branchname: String!, branchAdress: String!): MutationResponse
+
+#   changeBranch(
+#     branchId: ID!
+#     branchname: String
+#     branchAdress: String
+#   ): MutationResponse
+
+#   deleteBranch(branchId: ID!): MutationResponse!
+# }
