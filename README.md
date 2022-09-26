@@ -17,7 +17,7 @@ To run the program, type npm run start:dev in the terminal
 # About program
 ```
 I used express.js to get the user and books to the browser after running the app
-For user: http://localhost:5000/api/books
+For user: http://localhost:5000/api/users
 For book: http://localhost:5000/api/books
 ```
 
