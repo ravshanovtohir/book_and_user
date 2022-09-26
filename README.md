@@ -20,7 +20,9 @@ I used express.js to get the user and books to the browser after running the app
 For user: http://localhost:5000/api/books
 For book: http://localhost:5000/api/books
 ```
-QUERIES for GRAPHQL
+
+# QUERIES for GRAPHQL
+
 
 # Add User
 ```
